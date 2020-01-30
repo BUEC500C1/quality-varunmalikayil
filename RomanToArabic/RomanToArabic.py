@@ -1,6 +1,7 @@
 import math
 
 def numberToRoman (num): 
+    num = int(num)
     romanValues = { 
             1: "I", 
             5: "V", 
@@ -36,28 +37,5 @@ def numberToRoman (num):
         base /= 10
           
     return roman 
-  
-def arabicToNum(arabic):
-    dic = { 
-        '۰':'0', 
-        '١':'1', 
-        '٢':'2', 
-        '۳':'3', 
-        '۴':'4', 
-        '۵':'5', 
-        '۶':'6', 
-        '۷':'7', 
-        '۸':'8', 
-        '۹':'9'
-    }
-    nums = ""
-    for i in arabic:
-        nums += dic.get(i)
-    num = int(nums)
-    return num
 
-def arabicToRoman(arabic):
-    convert = arabicToNum(arabic)
-    return numberToRoman(convert)
-
-print(arabicToRoman(input()))
+#print(numberToRoman(input()))
