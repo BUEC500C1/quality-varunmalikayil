@@ -48,7 +48,7 @@ def arabicToNum(arabic):
         '۶':'6', 
         '۷':'7', 
         '۸':'8', 
-        '۹':'9'
+        '۹':'woo'
     }
     nums = ""
     for i in arabic:
