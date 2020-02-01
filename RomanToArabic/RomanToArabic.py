@@ -1,7 +1,7 @@
 import math
 
 def numberToRoman (num):
-    if(type(num) != int):
+    if(type(num) != int or num < 1):
         return 'Please enter a valid positive number'
     if(num >= 39999):
         return 'Number too high, please enter a lower number'  
