@@ -1,6 +1,10 @@
 import math
 
-def numberToRoman (num): 
+def numberToRoman (num):
+    if(type(num) != int):
+        return 'Please enter a valid positive number'
+    if(num >= 39999):
+        return 'Number too high, please enter a lower number'  
     num = int(num)
     romanValues = { 
             1: "I", 
@@ -38,4 +42,4 @@ def numberToRoman (num):
           
     return roman 
 
-#print(numberToRoman(input()))
+print(numberToRoman(input()))
